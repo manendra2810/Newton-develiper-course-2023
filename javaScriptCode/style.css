@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    row-gap: 3px;
+    height: 100vh;
+}
+
+.container div{
+    background-color: rgb(55, 90, 90);
+    border: 2px solid red;
+    margin: 5px;
+    padding: 10px;
+    justify-content: center;
+}
