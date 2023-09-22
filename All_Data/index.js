@@ -115,5 +115,37 @@
 //     console.log(a+b);
 // };
 
-// add.call(person, 2, 3);  // call   // in call we pass the arguments value as a normal aguments;
-// add.apply(person, [2, 3]);   // apply  // in apply we pass the value in the form of an array
+// add.call(person,2,3);  // call   // in call we pass the arguments value as a normal aguments;
+// add.apply(person, [2, 3]);   //
+
+/* this is the way of writing the constructor function and adding a method in to the constructor
+function */
+//Constructor Function
+// const Person = function () {
+//   this.date = new Date();  // date property which is an instance of a Date Object 
+// }
+
+//Method to add in Person constructor function
+// Person.prototype.sayHello = function () {
+//   console.log("Hello");
+// };
+
+
+/* This is the another way of writting tha constructor function with class and adding a 
+method in it. This whole code is later gets converted in to the above written code so the 
+better way us to write the constructor function and adding the method in it is above written 
+code */
+
+// class Person {
+//     //Constructor Function-------
+//     constructor(name) {
+//         this.name = name;
+//     };
+
+//     //Method--------
+//     sayHello(){
+//         console.log("hello");
+//     };
+// };
+
+
